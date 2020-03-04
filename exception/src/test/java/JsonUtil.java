@@ -16,7 +16,7 @@ public class JsonUtil {
     String s = null;
     try {
       s = map.writeValueAsString(object);
-    }catch (IOException e) {
+    }catch (JsonProcessingException e) {
       e.printStackTrace();
     }
     return s;
